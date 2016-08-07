@@ -58,9 +58,8 @@ Or remove the code editor completely:
 @status alpha
 @homepage http://sepans.github.io/p5-element
 -->
-<!--<polymer-element name="p5-element" attributes="setupFunction drawFunction globalVars hideEditor">
--->
-<dom-module id="p5-element"  attributes="setupFunction drawFunction globalVars hideEditor">
+<polymer-element name="p5-element" attributes="setupFunction drawFunction globalVars hideEditor">
+
   <template>
 
     <link rel="stylesheet" href="p5-element.css">
@@ -128,17 +127,8 @@ Or remove the code editor completely:
 
   <script>
 
-   // Polymer('p5-element', {
-   Polymer({
-		is: 'p5-element',
-      properties: {
- 
-    globalVars: {
-      type: String,
-      value: 'x= 15,\ny = 15;',
-      notify: true
-    }
-  },
+    Polymer('p5-element', {
+     
       _p5: null,
       //_sketch: {},
       /**
@@ -147,14 +137,14 @@ Or remove the code editor completely:
        * @property globalVars
        * @type {String}
        */
-    //  globalVars: 'x= 15,\ny = 15;',
+      globalVars: 'x= 15,\ny = 15',
       /**
        * Setup function for the p5.js component
        *
        * @property setupFunction
        * @type {String}
        */
-      setupFunction: 'createCanvas(300, 200);\nx= 15,\ny = 15;',
+      setupFunction: 'createCanvas(300, 200);',
       /**
        * Draw function for the p5.js component
        *
@@ -203,8 +193,6 @@ Or remove the code editor completely:
       ready: function() {
         
        var self = this;
-	   self.globalVars.x= 15;
-	   self.globalVars.y = 15;
        //globalVarsChanged method calls createP5 function in the end.
        self._globalVarsChanged();
 
@@ -467,7 +455,7 @@ Or remove the code editor completely:
         // reset currentVars //TODO make it smarter!
         self._currentVars = [];
         self._sketch = null;
-		console.log(self.globalVars);
+
         var varList = self.globalVars.split(',');
         self._globalVarsParsed = varList.map(function(item) {
           var splits = item.split('=');
@@ -640,6 +628,5 @@ Or remove the code editor completely:
     });
 
   </script>
-<!--
-</polymer-element>-->
-</dom-module>
+
+</polymer-element>

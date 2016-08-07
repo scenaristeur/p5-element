@@ -1,20 +1,22 @@
 {
   "name": "p5-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
+    "authors": [
+    "David Faveris <scenaristeur@gmail.com>"
+  ],
   "keywords": [
     "p5.js",
     "processing",
-    "polymer",
+    "polymer 1.0",
     "web-components"
   ],
   "main": "p5-element.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.1",
-    "p5js": "~0.3.13",
-    "core-collapse": "Polymer/core-collapse#~0.5.5",
-    "codemirror": "~5.1.0",
-    "codemirror-31": "codemirror/codemirror#v3.1",
-    "github-elements": "PolymerLabs/github-elements#~0.5.0",
-    "paper-dialog": "Polymer/paper-dialog#~0.5.5"
+    "polymer": "Polymer/polymer#^1.2.0",
+    "p5js": "^0.5.2",
+    "iron-collapse": "PolymerElements/iron-collapse#^1.2.0",
+    "codemirror": "^5.1.0",
+    "codemirror-31": "codemirror/codemirror#^3.1",
+    "paper-dialog": "PolymerElements/paper-dialog#^1.1.0"
   }
 }

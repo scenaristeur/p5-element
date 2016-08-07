@@ -1,5 +1,6 @@
-p5-element Updated for POLYMER 1.0
+p5-element updated for POLYMER 1.0
 ================
+fork from [http://sepans.github.io/p5-element/components/p5-element/demo.html](http://sepans.github.io/p5-element/components/p5-element/demo.html)
 
 See the [component page](http://sepans.github.io/p5-element) for updated information information.
 
