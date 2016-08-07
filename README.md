@@ -1,4 +1,4 @@
-p5-element
+p5-element Updated for POLYMER 1.0
 ================
 
 See the [component page](http://sepans.github.io/p5-element) for updated information information.
