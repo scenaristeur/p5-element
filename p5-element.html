@@ -116,7 +116,7 @@ Or remove the code editor completely:
     <template if="{{!hideEditor}}">
       <label>canvas:</label>   
     </template>
-     <div id="canvas_container"></div>
+     <div id="canvas_container" ></div>
 
     
 
@@ -203,10 +203,13 @@ Or remove the code editor completely:
       ready: function() {
         
        var self = this;
+	  // console.log(self);
 	   self.globalVars.x= 15;
 	   self.globalVars.y = 15;
        //globalVarsChanged method calls createP5 function in the end.
        self._globalVarsChanged();
+	   self._p5.canvas.style.visibility = "visible";
+	   console.log(self._p5.canvas.style.visibility);
 
       },
 
@@ -468,6 +471,7 @@ Or remove the code editor completely:
         self._currentVars = [];
         self._sketch = null;
 		console.log(self.globalVars);
+		console.log(self._sketch);
         var varList = self.globalVars.split(',');
         self._globalVarsParsed = varList.map(function(item) {
           var splits = item.split('=');

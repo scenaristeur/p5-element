@@ -1,0 +1,32 @@
+{
+  "name": "p5-element",
+  "authors": [
+    "David Faveris <scenaristeur@gmail.com>"
+  ],
+  "keywords": [
+    "p5.js",
+    "processing",
+    "polymer 1.0",
+    "web-components"
+  ],
+  "main": "p5-element.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "p5js": "^0.5.2",
+    "iron-collapse": "PolymerElements/iron-collapse#^1.2.0",
+    "codemirror": "^5.1.0",
+    "codemirror-31": "codemirror/codemirror#^3.1",
+    "paper-dialog": "PolymerElements/paper-dialog#^1.1.0"
+  },
+  "homepage": "https://github.com/scenaristeur/p5-element",
+  "_release": "0e45773e6d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0e45773e6df93de849924aa6edfdcedb9feb7956"
+  },
+  "_source": "git://github.com/scenaristeur/p5-element.git",
+  "_target": "*",
+  "_originalSource": "scenaristeur/p5-element",
+  "_direct": true
+}
